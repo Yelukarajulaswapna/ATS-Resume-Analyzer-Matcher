@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ATS Resume Analyzer</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<div class="app">
+
+    <!-- LEFT NAV (like ResumeWorded) -->
+    <div class="sidebar">
+        <h2>ATS</h2>
+        <ul>
+            <li class="active">Impact</li>
+            <li>Brevity</li>
+            <li>Style</li>
+            <li>Skills</li>
+        </ul>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="main">
+
+        <!-- Upload -->
+        <div class="card">
+            <h2>ATS Resume Matcher</h2>
+            <form id="resumeForm">
+                <input type="file" id="resume" required>
+                <textarea id="jobDescription" rows="5" placeholder="Paste Job Description" required></textarea>
+                <button type="submit">Analyze Resume</button>
+            </form>
+        </div>
+
+        <!-- RESULT -->
+        <div id="result" style="display:none">
+
+            <!-- SCORE -->
+            <div class="card score-card">
+                <div class="score-ring" id="ring">
+                    <div class="score-inner">
+                        <span id="score">0</span>
+                        <small>Overall Score</small>
+                    </div>
+                </div>
+
+                <div class="score-text">
+                    <h3>Your resume scored <span id="scoreText">0</span> out of 100</h3>
+                    <p>Based on ATS keyword and structure analysis</p>
+                </div>
+            </div>
+
+            <!-- BREAKDOWN -->
+            <div class="breakdown">
+                <div class="mini-card good">
+                    <h4>Impact</h4>
+                    <p id="impactScore">90 / 100</p>
+                    <span>Excellent</span>
+                </div>
+
+                <div class="mini-card warn">
+                    <h4>Brevity</h4>
+                    <p>65 / 100</p>
+                    <span>Average</span>
+                </div>
+
+                <div class="mini-card good">
+                    <h4>Style</h4>
+                    <p>85 / 100</p>
+                    <span>Very Good</span>
+                </div>
+
+                <div class="mini-card good">
+                    <h4>Skills</h4>
+                    <p id="skillsScore">80 / 100</p>
+                    <span>Good</span>
+                </div>
+            </div>
+
+            <!-- DETAILS -->
+            <div class="grid">
+                <div class="card">
+                    <h3>✔ Skills Matched</h3>
+                    <div id="matchedSkills"></div>
+                </div>
+
+                <div class="card">
+                    <h3>⚠ Missing / Improve</h3>
+                    <div id="missingSkills"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<script src="/js/uploadjs.js"></script>
+</body>
+</html>
