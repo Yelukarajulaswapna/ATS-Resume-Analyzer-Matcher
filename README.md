@@ -119,7 +119,7 @@ resumematcher/
 
 ### 1️⃣ Clone Repository
 
-git clone https://github.com/yourusername/ats-resume-analyzer.git
+git clone (https://github.com/Yelukarajulaswapna/ATS-Resume-Analyzer-Matcher.git)
 
 2️⃣ Configure Database
 
