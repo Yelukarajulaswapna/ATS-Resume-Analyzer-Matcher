@@ -150,7 +150,8 @@ http://localhost:8080/upload.html
 ```
 ## 📸 Screenshots
 
-(Add your project screenshots here)
+<img width="1913" height="899" alt="image" src="https://github.com/user-attachments/assets/84c44771-00fe-4e48-b9e5-71d3cf15fe4c" />
+
 
 ## 🔍 Example Output
 
